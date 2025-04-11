@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmx1uvm8eklev"]
+
+[ext_resource type="Texture2D" uid="uid://q0cghfj8gn7n" path="res://Assets/Sprites/Planes/planeRed1.png" id="1_l8h54"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4ntmi"]
+radius = 45.0
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_l8h54")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4ntmi")
